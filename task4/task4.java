@@ -39,7 +39,6 @@ public class task4 {
                 count += Math.abs(nums[j] - medianValue);
             }
             System.out.println(count);
-            System.out.println();
 
             sc.close();
             linesQty.close();
