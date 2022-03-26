@@ -10,14 +10,14 @@ public class task2 {
 
                 float x = file1.nextFloat();
                 float y = file1.nextFloat();
-                int radius = file1.nextInt();
+                float radius = file1.nextInt();
 
                 while (file2.hasNextLine()) {
                     String[] s = file2.nextLine().split(" ");
                     float px = Float.parseFloat(s[0]);
                     float py = Float.parseFloat(s[1]);
                     float dist = (float) Math.sqrt(Math.pow(x - px, 2) + Math.pow(y - py, 2));
-                    if ((int) dist == radius) {
+                    if (dist == radius) {
                         System.out.println(0);
                     } else if (dist < radius) {
                         System.out.println(1);
